@@ -344,9 +344,10 @@ void __fastcall TForm1::FormCreate(TObject *Sender)
         AnsiString strHello = "Welcome to The Ping-Pong Game :)";
 	AnsiString strFirstPlayer = "1st player controls: 'UP ARROW key':up. 'DOWN ARROW key':down";
 	AnsiString strSecondPlayer = "2nd player controls: 'W':up. 'S':down";
+        AnsiString strPause = "Press Space to start game or pause";
 	AnsiString strLast = "Lets The Ping-Pong Games Begin!! !";
        	ShowMessage(strHello + sLineBreak + strFirstPlayer + sLineBreak +
-	 		strSecondPlayer + sLineBreak + strLast);
+	 		strSecondPlayer + sLineBreak + strPause + sLineBreak + strLast);
 }
 //---------------------------------------------------------------------------
 
