@@ -9,6 +9,7 @@
 #include <dstring.h>
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
+#pragma link "trayicon"
 #pragma resource "*.dfm"
 TForm1 *Form1;
 
@@ -348,6 +349,14 @@ void __fastcall TForm1::FormCreate(TObject *Sender)
 	AnsiString strLast = "Lets The Ping-Pong Games Begin!! !";
        	ShowMessage(strHello + sLineBreak + strFirstPlayer + sLineBreak +
 	 		strSecondPlayer + sLineBreak + strPause + sLineBreak + strLast);
+}
+//---------------------------------------------------------------------------
+
+
+
+void __fastcall TForm1::TrayIcon1Create(TObject *Sender)
+{
+;        
 }
 //---------------------------------------------------------------------------
 

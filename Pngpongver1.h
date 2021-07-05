@@ -10,6 +10,7 @@
 #include <ExtCtrls.hpp>
 #include <Graphics.hpp>
 #include <Menus.hpp>
+#include "trayicon.h"
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
@@ -45,6 +46,7 @@ __published:	// IDE-managed Components
         TImage *ball2;
         TButton *ball1Button;
         TButton *ball2Button;
+        TTrayIcon *TrayIcon1;
         void __fastcall ballTimerTimer(TObject *Sender);
         void __fastcall FormKeyDown(TObject *Sender, WORD &Key,
           TShiftState Shift);
@@ -66,6 +68,7 @@ __published:	// IDE-managed Components
         void __fastcall ball1ButtonClick(TObject *Sender);
         void __fastcall ball2ButtonClick(TObject *Sender);
         void __fastcall FormCreate(TObject *Sender);
+        void __fastcall TrayIcon1Create(TObject *Sender);
         
         
 private:	// User declarations

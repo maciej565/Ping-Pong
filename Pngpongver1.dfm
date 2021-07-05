@@ -23,7 +23,7 @@ object Form1: TForm1
   TextHeight = 13
   object background: TShape
     Left = 0
-    Top = 0
+    Top = -8
     Width = 1000
     Height = 601
     Brush.Color = clAqua
@@ -1164,5 +1164,14 @@ object Form1: TForm1
     OnTimer = down2Timer
     Left = 936
     Top = 352
+  end
+  object TrayIcon1: TTrayIcon
+    Visible = True
+    Hide = True
+    RestoreOn = imDoubleClick
+    PopupMenuOn = imNone
+    OnCreate = TrayIcon1Create
+    Left = 16
+    Top = 8
   end
 end
